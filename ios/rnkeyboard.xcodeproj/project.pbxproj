@@ -235,6 +235,7 @@
 				10A0A12D27F7B5C3009C7E56 /* Frameworks */,
 				10A0A12E27F7B5C3009C7E56 /* Resources */,
 				0C74E7D07129C9C6F5907A21 /* [CP] Copy Pods Resources */,
+				1096E88127F7B71C0080A9D2 /* Bundle React Native code and images */,
 			);
 			buildRules = (
 			);
@@ -383,6 +384,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnkeyboard-keyboard/Pods-rnkeyboard-keyboard-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		1096E88127F7B71C0080A9D2 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		68C465F4C5FA220943082C38 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
