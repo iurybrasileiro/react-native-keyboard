@@ -7,56 +7,76 @@
 
 #import "KeyboardViewController.h"
 
+#import <React/RCTBridge.h>
+#import <React/RCTBundleURLProvider.h>
+#import <React/RCTRootView.h>
+
 @interface KeyboardViewController ()
-@property (nonatomic, strong) UIButton *nextKeyboardButton;
+  @property (nonatomic) RCTRootView *rootView;
+  @property (nonatomic) RCTBridge *bridge;
 @end
+
+KeyboardViewController * keyboardViewController = nil;
 
 @implementation KeyboardViewController
 
 - (void)updateViewConstraints {
     [super updateViewConstraints];
-    
-    // Add custom view sizing constraints here
+  
+    if (self.rootView) {
+      self.rootView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+  
+    CGFloat _expandedHeight = 380;
+    NSLayoutConstraint *_heightConstraint =
+        [NSLayoutConstraint constraintWithItem: self.view
+                                   attribute: NSLayoutAttributeHeight
+                                   relatedBy: NSLayoutRelationEqual
+                                      toItem: nil
+                                   attribute: NSLayoutAttributeNotAnAttribute
+                                  multiplier: 0.0
+                                    constant: _expandedHeight];
+    [self.view addConstraint: _heightConstraint];
     
-    // Perform custom UI setup here
-    self.nextKeyboardButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    self.bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:@{@"keyboardExtension": self}];
+    self.rootView = [[RCTRootView alloc] initWithBridge:self.bridge
+                                                     moduleName:@"keyboard"
+                                               initialProperties:nil];
+  
+    self.view = self.rootView;
+    [self updateViewConstraints];
+    keyboardViewController = self;
     
-    [self.nextKeyboardButton setTitle:NSLocalizedString(@"Next Keyboard", @"Title for 'Next Keyboard' button") forState:UIControlStateNormal];
-    [self.nextKeyboardButton sizeToFit];
-    self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = NO;
-    
-    [self.nextKeyboardButton addTarget:self action:@selector(handleInputModeListFromView:withEvent:) forControlEvents:UIControlEventAllTouchEvents];
-    
-    [self.view addSubview:self.nextKeyboardButton];
-    
-    [self.nextKeyboardButton.leftAnchor constraintEqualToAnchor:self.view.leftAnchor].active = YES;
-    [self.nextKeyboardButton.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
+}
+
+- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
+{
+    #if DEBUG
+      return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index"];
+    #else
+      return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+    #endif
 }
 
 - (void)viewWillLayoutSubviews
 {
-    self.nextKeyboardButton.hidden = !self.needsInputModeSwitchKey;
-    [super viewWillLayoutSubviews];
+    //
 }
 
 - (void)textWillChange:(id<UITextInput>)textInput {
-    // The app is about to change the document's contents. Perform any preparation here.
+    //
 }
 
 - (void)textDidChange:(id<UITextInput>)textInput {
-    // The app has just changed the document's contents, the document context has been updated.
-    
-    UIColor *textColor = nil;
-    if (self.textDocumentProxy.keyboardAppearance == UIKeyboardAppearanceDark) {
-        textColor = [UIColor whiteColor];
-    } else {
-        textColor = [UIColor blackColor];
-    }
-    [self.nextKeyboardButton setTitleColor:textColor forState:UIControlStateNormal];
+    //
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
 }
 
 @end
