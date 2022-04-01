@@ -19,10 +19,16 @@ target 'rnkeyboard' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  # Keyboard extension
+  target 'keyboard' do
+    inherit! :complete
+  end
+
   target 'rnkeyboardTests' do
     inherit! :complete
     # Pods for testing
   end
+
 
   # Enables Flipper.
   #
