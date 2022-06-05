@@ -16,7 +16,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-rnkeyboard-rnkeyboardTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnkeyboard-rnkeyboardTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		DA1230185BF7D37CBF53C98A /* libPods-rnkeyboard-keyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 521DCC5C74FD1E49F4CB56E6 /* libPods-rnkeyboard-keyboard.a */; };
+		F1CCF8E7422F721769CF92CF /* libPods-keyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEDF8867B9E217264A73C08 /* libPods-keyboard.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,13 +65,15 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = rnkeyboard/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rnkeyboard/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnkeyboard-rnkeyboardTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnkeyboard-rnkeyboardTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EEDF8867B9E217264A73C08 /* libPods-keyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keyboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-rnkeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnkeyboard.debug.xcconfig"; path = "Target Support Files/Pods-rnkeyboard/Pods-rnkeyboard.debug.xcconfig"; sourceTree = "<group>"; };
-		521DCC5C74FD1E49F4CB56E6 /* libPods-rnkeyboard-keyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnkeyboard-keyboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5709B34CF0A7D63546082F79 /* Pods-rnkeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnkeyboard.release.xcconfig"; path = "Target Support Files/Pods-rnkeyboard/Pods-rnkeyboard.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-rnkeyboard-rnkeyboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnkeyboard-rnkeyboardTests.debug.xcconfig"; path = "Target Support Files/Pods-rnkeyboard-rnkeyboardTests/Pods-rnkeyboard-rnkeyboardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-rnkeyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnkeyboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71B4C10331E5EC619ACA4B28 /* Pods-keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keyboard.release.xcconfig"; path = "Target Support Files/Pods-keyboard/Pods-keyboard.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rnkeyboard/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-rnkeyboard-rnkeyboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnkeyboard-rnkeyboardTests.release.xcconfig"; path = "Target Support Files/Pods-rnkeyboard-rnkeyboardTests/Pods-rnkeyboard-rnkeyboardTests.release.xcconfig"; sourceTree = "<group>"; };
+		9DA749772DCCC6C2D58EA78C /* Pods-keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keyboard.debug.xcconfig"; path = "Target Support Files/Pods-keyboard/Pods-keyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		A069EE9A3215AB9A8F07167A /* Pods-rnkeyboard-keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnkeyboard-keyboard.release.xcconfig"; path = "Target Support Files/Pods-rnkeyboard-keyboard/Pods-rnkeyboard-keyboard.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FDDAD3EA8E02C887ABAFCD1B /* Pods-rnkeyboard-keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnkeyboard-keyboard.debug.xcconfig"; path = "Target Support Files/Pods-rnkeyboard-keyboard/Pods-rnkeyboard-keyboard.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA1230185BF7D37CBF53C98A /* libPods-rnkeyboard-keyboard.a in Frameworks */,
+				F1CCF8E7422F721769CF92CF /* libPods-keyboard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +153,7 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-rnkeyboard.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnkeyboard-rnkeyboardTests.a */,
-				521DCC5C74FD1E49F4CB56E6 /* libPods-rnkeyboard-keyboard.a */,
+				2EEDF8867B9E217264A73C08 /* libPods-keyboard.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,6 +200,8 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-rnkeyboard-rnkeyboardTests.release.xcconfig */,
 				FDDAD3EA8E02C887ABAFCD1B /* Pods-rnkeyboard-keyboard.debug.xcconfig */,
 				A069EE9A3215AB9A8F07167A /* Pods-rnkeyboard-keyboard.release.xcconfig */,
+				9DA749772DCCC6C2D58EA78C /* Pods-keyboard.debug.xcconfig */,
+				71B4C10331E5EC619ACA4B28 /* Pods-keyboard.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -374,15 +378,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rnkeyboard-keyboard/Pods-rnkeyboard-keyboard-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-keyboard/Pods-keyboard-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rnkeyboard-keyboard/Pods-rnkeyboard-keyboard-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-keyboard/Pods-keyboard-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnkeyboard-keyboard/Pods-rnkeyboard-keyboard-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-keyboard/Pods-keyboard-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1096E88127F7B71C0080A9D2 /* Bundle React Native code and images */ = {
@@ -418,7 +422,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-rnkeyboard-keyboard-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-keyboard-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -636,7 +640,7 @@
 		};
 		10A0A13A27F7B5C3009C7E56 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDDAD3EA8E02C887ABAFCD1B /* Pods-rnkeyboard-keyboard.debug.xcconfig */;
+			baseConfigurationReference = 9DA749772DCCC6C2D58EA78C /* Pods-keyboard.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -677,7 +681,7 @@
 		};
 		10A0A13B27F7B5C3009C7E56 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A069EE9A3215AB9A8F07167A /* Pods-rnkeyboard-keyboard.release.xcconfig */;
+			baseConfigurationReference = 71B4C10331E5EC619ACA4B28 /* Pods-keyboard.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;

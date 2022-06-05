@@ -11,7 +11,7 @@ export const Container = styled.View`
 `
 
 export const Title = styled.Text`
-  font-size: 18;
+  font-size: 18px;
   font-weight: 900;
   text-align: center;
 `
